@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Leap Tutorial</title>
+	</head>
+	<body>
+		<h1>$P 3D Recognizer</h1>
+
+		Gesture Name: <input type="text" id="gestureName">
+		<br>
+		<br>
+		
+		<button id="record">START Recording</button>
+		<button id="addGesture">Add Gesture</button>
+		<br>
+		<br>
+		<button id="identifyGesture">Identify Gesture</button>
+		<br>
+		<br>
+    <!--<button id="plotCloud">Plot Points</button>-->
+    <div id = "output"></div>
+    <br>
+    <div id = "availableGestures"></div>
+    <br>
+    <div id = "recognizerOutput"></div>
+		<br>
+		<br>
+    
+    <div id = "container" style="height: 600px;
+                                 width: 600px;
+                                 margin: auto;">                               
+    </div>
+	</body>
+
+
+  <!--JAVASCRIPT CODE -->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//js.leapmotion.com/leap-0.6.4.min.js"></script>
+	
+	<!-- $P Recognizer -->
+  <script src="$P_3D.js"></script>
+  <script src="$P_3D_tutorial.js"></script>
+	
+	<!--
+  <script src="$P_2D.js"></script>
+  <script src="$P_2D_tutorial.js"></script>
+  -->
+  
+  <!-- SCATTER PLOT JAVASCRIPT -->
+  <script src="http://code.highcharts.com/highcharts.js"></script>  
+  <script src="http://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+  <script src="ScatterPlot.js"></script>
+
+	<!-- <script type="text/javascript" src="leapTutorial.js"></script> -->
+
+</html>
